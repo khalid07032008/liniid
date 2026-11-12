@@ -19,10 +19,10 @@
 <p class="lede">2,222 LINID. A collection of characters built from layers of color on Robinhood Chain.</p>
 <div class="stats"><div><span class="label">Supply</span><strong>2,222</strong></div><div><span class="label">Upcoming mint price</span><strong>Free</strong></div></div><div class="mint-progress"><div class="mint-progress-row"><label class="label" for="mint-progress">Minted</label><strong id="minted" aria-live="polite">— / 2,222</strong></div><progress id="mint-progress" value="0" max="2222"></progress><p class="note">On-chain count from Robinhood Chain.</p></div>
 <div style="display:flex;align-items:center;gap:10px;margin:0 0 12px"><label for="mint-quantity">Quantity</label><input style="width:85px;font:inherit;padding:6px" id="mint-quantity" type="number" min="1" max="2222" step="1" value="1"><button class="wallet" id="mint-max">Max</button></div><button class="cta" id="preview">Mint <span aria-hidden="true">↗</span></button>
-<p class="note" id="mint-status" role="status">Current contract charges 0.0005 ETH per NFT + gas until the new contract is connected.</p><p class="note" id="wallet-status" role="status"></p>
+<p class="note" id="mint-status" role="status"></p><p class="note" id="wallet-status" role="status"></p>
 </div>
 <div class="art"><div class="art-top label"><span>Collection preview</span><span id="serial">#0001</span></div><canvas width="780" height="700" role="img" aria-label="Isometric LINID character made of colorful stacked frames"></canvas><div class="art-bottom"><span class="label">LINID</span><button class="shuffle" id="shuffle">Shuffle ↻</button></div></div></section>
-<div class="gallery" id="gallery" aria-label="Choose a LINID character"></div><section class="details"><h2>Mint details</h2><div><details><summary>Can I mint here?</summary><p>Connect your wallet on Robinhood Chain. Each mint costs 0.0005 ETH plus gas.</p></details></div></section>
+<div class="gallery" id="gallery" aria-label="Choose a LINID character"></div><p class="note">Current contract charges 0.0005 ETH per NFT + gas until the new contract is connected.</p><section class="details"><h2>Mint details</h2><div><details><summary>Can I mint here?</summary><p>Connect your wallet on Robinhood Chain. Each mint costs 0.0005 ETH plus gas.</p></details></div></section>
 </main>
 <footer><a class="brand" href="#"><i></i>LINID</a><span class="label">2,222-piece collection</span></footer>
 <dialog class="modal" id="wallet-picker" aria-labelledby="wallet-title"><form method="dialog"><button class="close" aria-label="Close">×</button></form><h2 id="wallet-title">Choose a wallet</h2><div id="wallet-options"></div><p class="note" id="wallet-help"></p></dialog><script>
@@ -209,7 +209,7 @@ async function refresh(){
     document.querySelector('#minted').textContent=count.toLocaleString('en-US')+' / 2,222';
     document.querySelector('#mint-progress').value=Number(count);
     saleOpen=open===1n && count<2222n;
-    if(!pending&&!mintStatus.dataset.transaction)mintStatus.textContent=saleOpen?'Current contract charges 0.0005 ETH per NFT + gas until the new contract is connected.':count>=2222n?'Sold out.':'Mint is closed.';
+    if(!pending&&!mintStatus.dataset.transaction)mintStatus.textContent=saleOpen?'Ready to mint.':count>=2222n?'Sold out.':'Mint is closed.';
   }catch{
     if(!pending&&!mintStatus.dataset.transaction)mintStatus.textContent='Chain status unavailable. Connect your wallet on Robinhood Chain.';
   }
