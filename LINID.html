@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>LINID — Mint</title><link rel="icon" href="data:image/png;base64,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">
+<meta name="description" content="Explore the LINID collection and preview the mint on Robinhood Chain.">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+*{box-sizing:border-box} :root{--ink:#111735;--paper:#f9efd9;--red:#f35241;--line:#11173535} body{margin:0;background:var(--paper);color:var(--ink);font:14px 'IBM Plex Mono',monospace} a{color:inherit} button{font:inherit;cursor:pointer} button:focus-visible,a:focus-visible{outline:3px solid #8f6bbe;outline-offset:4px} header,main,footer{width:min(1320px,92%);margin:auto} header,footer{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:1px solid var(--line);gap:16px}.brand{font:24px 'Archivo Black',sans-serif;text-decoration:none}.brand i,.dot{display:inline-block;background:var(--red);width:10px;height:10px;margin-right:9px}.social{font-size:12px;text-decoration:none}.hero{display:grid;grid-template-columns:1fr 1.12fr;min-height:620px;border-bottom:1px solid var(--line)}.copy{align-self:center;padding:42px 7% 44px 0}.label{font-size:11px;letter-spacing:.13em;text-transform:uppercase;font-weight:600}.tag{display:inline-flex;align-items:center;border:1px solid var(--line);padding:8px 10px}.tag .dot{width:7px;height:7px}h1{font:clamp(68px,10.3vw,150px)/.82 'Archivo Black',Impact,sans-serif;letter-spacing:-.10em;margin:32px 0 24px}h1 span{display:block;color:var(--red);font-size:.48em;letter-spacing:-.075em;margin-top:12px}p{line-height:1.7}.lede{max-width:36ch}.stats{display:flex;margin:28px 0 20px;border-block:1px solid var(--line)}.stats div{flex:1;padding:12px 0}.stats div+div{border-left:1px solid var(--line);padding-left:16px}.stats strong{display:block;font-size:20px;margin-top:4px}.cta{width:100%;display:flex;justify-content:space-between;background:var(--ink);color:var(--paper);border:0;padding:16px 18px;font-weight:600}.cta:hover{background:#292f58}.note{font-size:11px;color:#54566a;margin-bottom:0}.art{position:relative;overflow:hidden;background:#111735;display:grid;place-items:center;color:var(--paper);margin:18px 0}.art:before{display:none;content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,#333956 0%,transparent 68%),repeating-linear-gradient(0deg,transparent 0 35px,#ffffff0a 36px 37px),repeating-linear-gradient(90deg,transparent 0 35px,#ffffff0a 36px 37px);pointer-events:none}canvas{width:100%;max-width:none;position:relative}.art-top,.art-bottom{position:absolute;left:20px;right:20px;display:flex;justify-content:space-between;align-items:center;z-index:1}.art-top{top:19px}.art-bottom{bottom:18px}.shuffle{color:inherit;background:#111735;border:1px solid #f9efd965;padding:8px 12px}.shuffle:hover{background:#363b5d}.details{display:grid;grid-template-columns:1fr 1.12fr;gap:24px;padding:40px 0}.details h2{font:clamp(26px,4vw,50px)/1 'Archivo Black',sans-serif;letter-spacing:-.06em;margin:0}details{border-top:1px solid var(--line);padding:12px 0}summary{cursor:pointer;font-weight:600}details p{margin:8px 0 0}footer{border-top:1px solid var(--line);border-bottom:0}.modal{max-width:390px;width:90%;padding:25px;border:2px solid var(--ink);color:var(--ink);background:var(--paper)}.modal::backdrop{background:#10152ec4}.modal h2{font-family:'Archivo Black',sans-serif}.controls{display:flex;align-items:center;justify-content:space-between;margin:18px 0}.controls button{padding:6px 14px;background:transparent;border:1px solid var(--ink)}.close{float:right;border:0;background:none;font-size:22px}@media(max-width:760px){.hero,.details{grid-template-columns:1fr}.copy{padding:32px 0 12px}.art{min-height:380px;margin:10px 0 16px}h1{font-size:clamp(80px,18vw,125px)}.details{padding:28px 0}.art-top,.art-bottom{left:12px;right:12px}}
+.nav{display:flex;align-items:center;gap:10px}.wallet{border:1px solid;padding:8px;background:transparent;color:inherit}.gallery{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;padding:12px 0}.gallery button{min-width:0;background:#111735;color:#f9efd9;border:2px solid transparent;padding:0 0 5px}.gallery button[aria-pressed=true]{border-color:#f35241}.gallery canvas{display:block}.stats strong{font-size:clamp(14px,2.7vw,20px)}@media(max-width:540px){.gallery{grid-template-columns:repeat(3,1fr)}}
+.mint-progress{margin:0 0 18px}.mint-progress-row{display:flex;justify-content:space-between;gap:12px;align-items:center}.mint-progress progress{display:block;width:100%;height:6px;margin:10px 0 7px;appearance:none;border:0;border-radius:0;background:#c7c7b6;color:#2348ff}.mint-progress progress::-webkit-progress-bar{background:#c7c7b6}.mint-progress progress::-webkit-progress-value{background:#2348ff}.mint-progress progress::-moz-progress-bar{background:#2348ff}.mint-progress .note{margin:0}</style>
+</head>
+<body>
+<header><a class="brand" href="#"><i></i>LINID</a><div class="nav"><button class="wallet" id="wallet">Connect wallet</button><a class="social" href="https://x.com/LINID_NFT" target="_blank" rel="noopener">@LINID_NFT ↗</a></div></header>
+<main>
+<section class="hero"><div class="copy">
+<span class="label tag"><i class="dot"></i> Robinhood Chain</span>
+<h1>LINID<span>FREE MINT</span></h1>
+<p class="lede">2,222 LINID. A collection of characters built from layers of color on Robinhood Chain.</p>
+<div class="stats"><div><span class="label">Supply</span><strong>2,222</strong></div><div><span class="label">Upcoming mint price</span><strong>Free</strong></div></div><div class="mint-progress"><div class="mint-progress-row"><label class="label" for="mint-progress">Minted</label><strong id="minted" aria-live="polite">— / 2,222</strong></div><progress id="mint-progress" value="0" max="2222"></progress><p class="note">On-chain count from Robinhood Chain.</p></div>
+<div style="display:flex;align-items:center;gap:10px;margin:0 0 12px"><label for="mint-quantity">Quantity</label><input style="width:85px;font:inherit;padding:6px" id="mint-quantity" type="number" min="1" max="2222" step="1" value="1"><button class="wallet" id="mint-max">Max</button></div><button class="cta" id="preview">Mint <span aria-hidden="true">↗</span></button>
+<p class="note" id="mint-status" role="status">Current contract charges 0.0005 ETH per NFT + gas until the new contract is connected.</p><p class="note" id="wallet-status" role="status"></p>
+</div>
+<div class="art"><div class="art-top label"><span>Collection preview</span><span id="serial">#0001</span></div><canvas width="780" height="700" role="img" aria-label="Isometric LINID character made of colorful stacked frames"></canvas><div class="art-bottom"><span class="label">LINID</span><button class="shuffle" id="shuffle">Shuffle ↻</button></div></div></section>
+<div class="gallery" id="gallery" aria-label="Choose a LINID character"></div><section class="details"><h2>Mint details</h2><div><details><summary>Can I mint here?</summary><p>Connect your wallet on Robinhood Chain. Each mint costs 0.0005 ETH plus gas.</p></details></div></section>
+</main>
+<footer><a class="brand" href="#"><i></i>LINID</a><span class="label">2,222-piece collection</span></footer>
+<dialog class="modal" id="wallet-picker" aria-labelledby="wallet-title"><form method="dialog"><button class="close" aria-label="Close">×</button></form><h2 id="wallet-title">Choose a wallet</h2><div id="wallet-options"></div><p class="note" id="wallet-help"></p></dialog><script>
+const canvas=document.querySelector('canvas'); let ctx=canvas.getContext('2d'), phase=0;
+const portraits=[
+  {bg:['#172454','#030a30'], hues:[2,42,39,267,347], body:173, widths:[196,218,244,240,250], depths:[132,142,146,146,155], shifts:[0,0,0,0,0], turns:[0,0,0,0,0]},
+  {bg:['#5d285d','#210d37'], hues:[315,43,267,190,296], body:259, widths:[260,220,180,156,128], depths:[152,145,130,116,100], shifts:[-15,0,12,25,38], turns:[0,.10,.18,.26,.34]},
+  {bg:['#1f615b','#082d34'], hues:[167,54,39,95,180], body:146, widths:[132,290,182,240,310], depths:[110,93,158,102,116], shifts:[0,-35,15,0,34], turns:[0,-.13,.11,-.15,.17]},
+  {bg:['#995243','#422035'], hues:[25,46,352,7,326], body:345, widths:[225,165,275,186,245], depths:[134,106,112,122,142], shifts:[18,-40,20,-36,32], turns:[.10,-.23,.19,-.24,.25]},
+  {bg:['#345b86','#132443'], hues:[189,44,217,172,258], body:211, widths:[276,200,164,202,278], depths:[168,135,119,142,170], shifts:[0,0,0,0,0], turns:[.04,.10,.17,.10,.04]},
+  {bg:['#84713b','#392c24'], hues:[58,42,170,13,38], body:37, widths:[155,185,220,252,298], depths:[100,120,130,156,180], shifts:[-26,-13,0,14,27], turns:[-.32,-.18,0,.18,.34]}
+];
+let variant=0, angle=0, pivot=0;
+function tones(hue,light=54){return ['hsl('+hue+' 63% '+light+'%)','hsl('+hue+' 55% '+(light-18)+'%)','hsl('+hue+' 72% '+(light+12)+'%)']}
+function project([x,y,z]){
+  const dx=x-pivot;
+  const rx=pivot+dx*Math.cos(angle)-y*Math.sin(angle);
+  const ry=dx*Math.sin(angle)+y*Math.cos(angle);
+  return [390+rx*(1.25+Math.sin(phase)*.10)-ry*.88,590+rx*.36+ry*.42-z+Math.sin(phase*1.4)*9];
+}
+function face(points,fill){
+  ctx.beginPath();
+  points.forEach((point,index)=>{const [x,y]=project(point); if(index===0)ctx.moveTo(x,y);else ctx.lineTo(x,y)});
+  ctx.closePath();ctx.fillStyle=fill;ctx.fill();
+}
+function box(x,y,z,w,d,h,[front,side,top]){
+  const a=[x,y,z], b=[x+w,y,z], c=[x+w,y+d,z], e=[x,y+d,z];
+  const lift=([px,py,pz])=>[px,py,pz+h];
+  face([b,c,lift(c),lift(b)],side);
+  face([e,c,lift(c),lift(e)],front);
+  face([lift(a),lift(b),lift(c),lift(e)],top);
+}
+function frame(x,y,z,w,d,h,t,color){
+  box(x,y,z,w,t,h,color);
+  box(x,y+t,z,t,d-2*t,h,color);
+  box(x+w-t,y+t,z,t,d-2*t,h,color);
+  box(x,y+d-t,z,w,t,h,color);
+}
+function draw(){
+  const art=portraits[variant];
+  const background=ctx.createRadialGradient(390,290,40,390,345,490);
+  background.addColorStop(0,art.bg[0]);background.addColorStop(1,art.bg[1]);
+  ctx.fillStyle=background;ctx.fillRect(0,0,780,700);
+  angle=0;pivot=0;
+  face([[-310,-125,-80],[310,-125,-80],[310,155,-80],[-310,155,-80]],art.bg[1]);
+  face([[-225,-60,22],[225,-60,22],[340,180,-100],[-340,180,-100]],tones(art.body,24)[0]);
+  face([[0,147,43],[225,-60,22],[340,180,-100],[0,250,-100]],tones(art.body,24)[1]);
+  box(-91,-65,0,182,130,103,tones(art.body,25));
+  box(-57,-40,103,114,80,83,tones(42,78));
+  for(let layer=0;layer<5;layer++){
+    const trait=4-layer;
+    const width=art.widths[layer], depth=art.depths[layer];
+    const x=art.shifts[layer]-width/2;
+    const y=-depth/2;
+    const z=179+layer*73+Math.sin(phase*1.7+layer*.72)*(layer+1)*2;
+    const color=tones(art.hues[trait],layer===3?77:55);
+    angle=art.turns[layer];pivot=art.shifts[layer];
+    frame(x,y,z,width,depth,53,variant===4?20:27,color);
+    const marks=layer===3?[-.20,.20]:layer===0?[0]:[];
+    for(const mark of marks){
+      const eye=x+width*(.5+mark), front=y+depth+.2;
+      const height=layer===3?22:8, size=layer===3?8:22;
+      face([[eye-size,front,z+16],[eye+size,front,z+16],[eye+size,front,z+16+height],[eye-size,front,z+16+height]],'#131429');
+    }
+  }
+}
+const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
+
+const thumbnails=portraits.map((_, index)=>{
+  const button=document.createElement('button');
+  const card=document.createElement('canvas');
+  card.width=156; card.height=140;
+
+  card.setAttribute('aria-hidden','true');
+  button.append(card,'#'+String(index+1).padStart(4,'0'));
+  button.onclick=()=>select(index);
+  document.querySelector('#gallery').append(button);
+  variant=index;
+  ctx=card.getContext('2d');ctx.scale(.2,.2);draw();
+  return button;
+});
+ctx=canvas.getContext('2d');
+function select(index){
+  variant=index;
+
+  document.querySelector('#serial').textContent=thumbnails[index].textContent;
+  thumbnails.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===index)));
+  draw();
+}
+function animate(now){
+  phase=reduceMotion.matches?0:now/1000;
+  draw();
+  requestAnimationFrame(animate);
+}
+select(0);
+requestAnimationFrame(animate);
+document.querySelector('#shuffle').onclick=()=>select((variant+1)%portraits.length);
+
+const wallet=document.querySelector('#wallet');
+const status=document.querySelector('#wallet-status');
+const picker=document.querySelector('#wallet-picker');
+const options=document.querySelector('#wallet-options');
+const help=document.querySelector('#wallet-help');
+const detectedWallets=new Map();
+let provider, providerName, accountListener, connecting=false;
+function updateAccount(accounts){
+  const address=accounts?.[0];
+  wallet.textContent=address ? address.slice(0,6)+'…'+address.slice(-4)+' ▾' : 'Connect wallet';
+  walletStatus.textContent=address ? 'Connected with '+providerName+'.' : '';
+}
+async function connectWallet(candidate,name){
+  if(connecting||pending)return;
+  connecting=true;
+  picker.close();
+  wallet.disabled=true;
+  try{
+    const accounts=await candidate.request({method:'eth_requestAccounts'});
+    if(!accounts?.[0])throw Error('No account was shared.');
+    provider?.removeListener?.('accountsChanged',accountListener);
+    provider=candidate;
+    providerName=name;
+    accountListener=accounts=>{if(provider===candidate)updateAccount(accounts)};
+    provider.on?.('accountsChanged',accountListener);
+    updateAccount(accounts);
+    void refresh();
+  }catch(error){
+    walletStatus.textContent=error.code===4001?'Connection cancelled.':error.code===-32002?'Approve the pending request in your wallet.':(error.message||'Wallet connection failed.');
+  }finally{
+    connecting=false;
+    wallet.disabled=false;
+  }
+}
+function renderWallets(){
+  const wallets=new Map(detectedWallets);
+  const legacy=window.ethereum;
+  for(const candidate of [...(Array.isArray(legacy?.providers)?legacy.providers:[]),legacy]){
+    if(typeof candidate?.request!=='function'||wallets.has(candidate))continue;
+    wallets.set(candidate,candidate.isRabby?'Rabby':candidate.isCoinbaseWallet?'Coinbase Wallet':candidate.isMetaMask?'MetaMask':'Browser wallet');
+  }
+  options.replaceChildren();
+  for(const [candidate,name] of wallets){
+    const button=document.createElement('button');
+    button.className='cta';
+    button.style.marginBottom='8px';
+    button.textContent=name+(candidate===provider?' · Selected':'');
+    button.onclick=()=>connectWallet(candidate,name);
+    options.append(button);
+  }
+  help.textContent=wallets.size?'Select the wallet you want to use for minting.':'No wallet detected. Open this link in Chrome, Edge, or a wallet browser with an Ethereum wallet enabled.';
+}
+window.addEventListener('eip6963:announceProvider',event=>{
+  const detail=event.detail;
+  if(typeof detail?.provider?.request!=='function')return;
+  detectedWallets.set(detail.provider,typeof detail.info?.name==='string'?detail.info.name:'Browser wallet');
+  if(picker.open)renderWallets();
+});
+function chooseWallet(){
+  if(connecting||pending||picker.open)return;
+  picker.showModal();
+  window.dispatchEvent(new Event('eip6963:requestProvider'));
+  renderWallets();
+  setTimeout(()=>{if(picker.open)renderWallets()},500);
+}
+wallet.onclick=chooseWallet;
+const target='0xd28ad5d8140197b8607b568849c2d5e26b5c3f8d';
+const chain='0x1237';
+const mintButton=document.querySelector('#preview');
+const mintStatus=document.querySelector('#mint-status');
+const quantity=document.querySelector('#mint-quantity'), maxButton=document.querySelector('#mint-max');
+let pending=false, saleOpen=false;
+async function read(data){
+  const params=[{to:target,data},'latest'];
+  if(provider?.request && await provider.request({method:'eth_chainId'}).catch(()=>null)===chain){
+    return BigInt(await provider.request({method:'eth_call',params}));
+  }
+  const response=await fetch('https://rpc.mainnet.chain.robinhood.com',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({jsonrpc:'2.0',id:1,method:'eth_call',params})});
+  const payload=await response.json();
+  if(!response.ok||!payload.result)throw Error('Chain data unavailable.');
+  return BigInt(payload.result);
+}
+async function refresh(){
+  try{
+    const [count,open]=await Promise.all([read('0x18160ddd'),read('0x24bbd049')]);
+    document.querySelector('#minted').textContent=count.toLocaleString('en-US')+' / 2,222';
+    document.querySelector('#mint-progress').value=Number(count);
+    saleOpen=open===1n && count<2222n;
+    if(!pending&&!mintStatus.dataset.transaction)mintStatus.textContent=saleOpen?'Current contract charges 0.0005 ETH per NFT + gas until the new contract is connected.':count>=2222n?'Sold out.':'Mint is closed.';
+  }catch{
+    if(!pending&&!mintStatus.dataset.transaction)mintStatus.textContent='Chain status unavailable. Connect your wallet on Robinhood Chain.';
+  }
+}
+async function runMint(maxOnly){
+  if(!provider){chooseWallet();return}
+  if(connecting)return
+  pending=true;mintButton.disabled=maxButton.disabled=quantity.disabled=true;
+  delete mintStatus.dataset.transaction;
+  try{
+
+    if(!provider?.request)throw Error('Open in a browser with a wallet extension.');
+    const [from]=await provider.request({method:'eth_requestAccounts'});
+    if(!from)throw Error('Connect your wallet.');
+    if(await provider.request({method:'eth_chainId'})!==chain){
+      try{await provider.request({method:'wallet_switchEthereumChain',params:[{chainId:chain}]})}
+      catch(error){
+        if(Number(error.code)!==4902)throw error;
+        await provider.request({method:'wallet_addEthereumChain',params:[{
+          chainId:chain,chainName:'Robinhood Chain',nativeCurrency:{name:'Ether',symbol:'ETH',decimals:18},
+          rpcUrls:['https://rpc.mainnet.chain.robinhood.com/'],blockExplorerUrls:['https://robinhoodchain.blockscout.com']
+        }]});
+        if(await provider.request({method:'eth_chainId'})!==chain)await provider.request({method:'wallet_switchEthereumChain',params:[{chainId:chain}]});
+      }
+    }
+    if(await provider.request({method:'eth_chainId'})!==chain)throw Error('Select Robinhood Chain.');
+    await refresh();
+    if(await read('0x24bbd049')!==1n)throw Error('Mint is closed.');
+    if(await read('0x18160ddd')>=2222n)throw Error('Sold out.');
+    const value=await read('0xc002d23d');
+    if(value!==500000000000000n)throw Error('Unexpected mint price.');
+    const tx={from,to:target,data:'0x1249c58b',value:'0x'+value.toString(16)};
+    const request=(method,params)=>provider.request({method,params});
+    const [gas,gasPrice,balance,supply]=await Promise.all([
+      request('eth_estimateGas',[tx]),request('eth_gasPrice',[]),
+      request('eth_getBalance',[from,'latest']),read('0x18160ddd')
+    ]);
+    const affordable=BigInt(balance)/(value+BigInt(gas)*BigInt(gasPrice));
+    const remaining=2222n-supply;
+    const max=Number(affordable<remaining?affordable:remaining);
+    mintStatus.dataset.transaction='true';
+    if(max<1)throw Error('Insufficient ETH for mint and gas.');
+    if(maxOnly){quantity.value=max;mintStatus.textContent='Estimated max: '+max+'. Your wallet confirms each mint.';return}
+    const count=Number(quantity.value);
+    if(!Number.isInteger(count)||count<1||count>max)throw Error('Choose a quantity from 1 to '+max+'.');
+    for(let completed=0;completed<count;completed++){
+      if(await request('eth_chainId',[])!==chain)throw Error('Network changed. Minting stopped.');
+      await request('eth_estimateGas',[tx]);
+      mintStatus.textContent='Confirm mint '+(completed+1)+' / '+count+' in your wallet.';
+      const hash=await request('eth_sendTransaction',[tx]);
+      mintStatus.textContent='Mint '+(completed+1)+' / '+count+' submitted: '+hash;
+      let receipt;
+      for(let i=0;i<60&&!receipt;i++){
+        receipt=await request('eth_getTransactionReceipt',[hash]);
+        if(!receipt)await new Promise(resolve=>setTimeout(resolve,2000));
+      }
+      if(!receipt){mintStatus.textContent='Mint still pending: '+hash;return}
+      if(receipt.status!=='0x1')throw Error('Mint transaction reverted.');
+      await refresh();
+      mintStatus.textContent=(completed+1)+' / '+count+' mints confirmed.';
+    }
+  }catch(error){mintStatus.dataset.transaction='true';mintStatus.textContent=error.code===4001?'Cancelled in wallet.':error.message}
+  finally{pending=false;mintButton.disabled=maxButton.disabled=quantity.disabled=false}
+};
+refresh();
+mintButton.onclick=()=>runMint(false);maxButton.onclick=()=>runMint(true);setInterval(refresh,15000);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
